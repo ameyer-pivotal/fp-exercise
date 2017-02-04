@@ -8,11 +8,11 @@ object ListProcessor {
 
     fun process(list: List<String>): Int {
         val ints = IntArray(list.size)
-        convertIntegers(list, ints)
+        convertToInts(list, ints)
         return sumInts(ints)
     }
 
-    private fun convertIntegers(strs: List<String>, ints: IntArray) {
+    private fun convertToInts(strs: List<String>, ints: IntArray) {
         s = 0
         i = 0
 
