@@ -20,9 +20,10 @@ object ListProcessor {
             try {
                 val intValue = strs[s].toInt()
                 ints[i] = intValue
-                s++
                 i++
             } catch (ex: Exception) {
+                // Skip element
+            } finally {
                 s++
             }
         }
